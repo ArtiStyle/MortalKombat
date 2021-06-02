@@ -5,24 +5,22 @@ const images = {
   sonya: "http://reactmarathon-api.herokuapp.com/assets/sonya.gif",
   subzero: "http://reactmarathon-api.herokuapp.com/assets/subzero.gif",
 };
-
 // Task #1 (*)
 const player1 = {
   name: "scorpion",
   hp: 100,
   img: "http://reactmarathon-api.herokuapp.com/assets/scorpion.gif",
   weapon: ["sword", "leg"],
-  attack: () => {
+  attack() {
     console.log(`${this.name} Fight...`);
   },
 };
-
 const player2 = {
   name: "kitana",
   hp: 80,
   img: "http://reactmarathon-api.herokuapp.com/assets/kitana.gif",
   weapon: ["fan", "arm"],
-  attack: () => {
+  attack() {
     console.log(`${this.name} Fight...`);
   },
 };
