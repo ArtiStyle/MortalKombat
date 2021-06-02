@@ -40,7 +40,7 @@ const createPlayerV1 = (clasName, name, health) => {
   $name.innerText = name;
 
   const $img = document.createElement("img");
-  $img.setAttribute("src", player.img);
+  $img.setAttribute("src", images[name] || images["scorpion"]);
 
   const $character = document.createElement("div");
   $character.classList.add("character");
@@ -71,7 +71,7 @@ const createPlayerV2 = (name, player) => {
   $name.innerText = player.name;
 
   const $img = document.createElement("img");
-  $img.setAttribute("src", images[name] || images["scorpion"]);
+  $img.setAttribute("src", player.img);
 
   const $character = document.createElement("div");
   $character.classList.add("character");
@@ -92,5 +92,5 @@ const createPlayerV2 = (name, player) => {
 // createPlayer('player2','kitana', 50)
 // createPlayer('player1','scorpion', 100)
 
-// createPlayerV2("player1", player1);
-// createPlayerV2("player2", player1);
+createPlayerV2("player1", player1);
+createPlayerV2("player2", player2);
