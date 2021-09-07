@@ -70,11 +70,12 @@ const changeHp = (player) => {
 
 const playerWins = (player) => {
   let name = "";
-  if ((player.player === 1)) {
+  if ((player.player == = 1)) {
     name = player2.name;
   } else {
     name = player1.name;
   }
+  asfasfasf
   const $loseTitle = createElement("div", "loseTitle");
   $loseTitle.innerText = `${name} wins`;
   return $loseTitle;
